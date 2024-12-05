@@ -13,7 +13,7 @@ spec:
     matchLabels:
       app: mysql
       tier: db
-      project: expense
+      project: expens
   template:
     metadata:
       labels:
