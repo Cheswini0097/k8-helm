@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
-  namespace: expense
+  namespace: expens
   labels:
     app: mysql
     tier: db
@@ -13,7 +13,7 @@ spec:
     matchLabels:
       app: mysql
       tier: db
-      project: expens
+      project: expense
   template:
     metadata:
       labels:
@@ -29,7 +29,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: mysql
-  namespace: expense
+  namespace: expens
 spec:
   selector:
     app: mysql
